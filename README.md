@@ -13,7 +13,7 @@ allprojects {<br>
 }<br>
 
 dependencies {<br>
-	compile 'com.github.snotJam:thinkLib:v1.0'<br>
+	compile 'com.github.snotJam:thinkLib:v1.0.1'<br>
 }
 
 
@@ -109,3 +109,7 @@ PercentLayout(百分比Layout)
     PercentFrameLayout.LayoutParams params = (PercentFrameLayout.LayoutParams) tvRed.getLayoutParams(); <br>
     params.getPercentLayoutInfo().widthPercent = 0.5f; <br>
     tvRed.setLayoutParams(params);<br>
+
+BaseViewPagerAdapter
+-----------
+	viewPager基础Adapter<br>
