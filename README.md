@@ -1,7 +1,21 @@
 # thinkLib
 base lib for android
 
-test use：
+test use:
+
+导入：
+----------
+allprojects {<br>
+	repositories {<br>
+		...
+		maven { url 'https://jitpack.io' }<br>
+	}<br>
+}<br>
+
+dependencies {<br>
+	compile 'com.github.snotJam:thinkLib:v1.0'<br>
+}
+
 
 透明状态栏
 -----------
