@@ -112,4 +112,4 @@ PercentLayout(百分比Layout)
 
 BaseViewPagerAdapter
 -----------
-	viewPager基础Adapter<br>
+	viewPager基础Adapter
