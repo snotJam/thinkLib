@@ -41,7 +41,7 @@ public abstract class BaseSimpleAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return data.get(position);
     }
 
     @Override
