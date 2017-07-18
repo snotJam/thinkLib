@@ -112,4 +112,15 @@ PercentLayout(百分比Layout)
 
 BaseViewPagerAdapter
 -----------
-	viewPager基础Adapter
+  viewPager基础Adapter<br>
+	
+NormalDialog
+------------
+  简单dialog的创建，使用方法<br>
+  dialog = new NormalDialog(context,R.style.CustomDialog，view);<br>
+  R.style.CustomDialog属性设置：无标题，无边框，背景默认白色。简而言之就是可以直接拿view当做dialog来显示<br>
+  
+NormalPopupTools
+------------------
+  简单popupWindow创建<br>
+  PopupWindow createNormalPopup(view,width,height)：内容和宽高。默认点击边界外关闭，可以获取焦点<br>
