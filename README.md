@@ -77,6 +77,7 @@ Tools
   isRightPw 字符串是否符合6-20位字母和数字的需求<br>
   parseStrToMd5L32 执行md5加密<br>
   startDownLoad 进行后台下载安装apk<br>
+  getAppVersion 获取应用版本号<br>
 
 TimeUtils
 -----------
