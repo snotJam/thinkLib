@@ -1,6 +1,8 @@
 package com.aprivate.thinklibrary.utils;
 
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Environment;
 
 import java.security.MessageDigest;
@@ -16,19 +18,21 @@ import me.shenfan.updateapp.UpdateService;
 public class Tools {
     /**
      * 检测SD卡
+     *
      * @return
      */
-    public static boolean hasSDcard(){
+    public static boolean hasSDcard() {
         String state = Environment.getExternalStorageState();
-        if(state.equals(Environment.MEDIA_MOUNTED)){
+        if (state.equals(Environment.MEDIA_MOUNTED)) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
 
     /**
      * 验证手机号
+     *
      * @param phone
      * @return
      */
@@ -41,6 +45,7 @@ public class Tools {
 
     /**
      * 验证密码是否符合6-20位字母和数字的要求
+     *
      * @param phone
      * @return
      */
@@ -53,18 +58,19 @@ public class Tools {
 
     /**
      * "md5"加密
+     *
      * @param str
      * @return
      */
-    public static String parseStrToMd5L32(String str){
+    public static String parseStrToMd5L32(String str) {
         String reStr = null;
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
             byte[] bytes = md5.digest(str.getBytes());
             StringBuffer stringBuffer = new StringBuffer();
-            for (byte b : bytes){
-                int bt = b&0xff;
-                if (bt < 16){
+            for (byte b : bytes) {
+                int bt = b & 0xff;
+                if (bt < 16) {
                     stringBuffer.append(0);
                 }
                 stringBuffer.append(Integer.toHexString(bt));
@@ -78,10 +84,29 @@ public class Tools {
 
     /**
      * 下载安装apk
-     * @param url      下载地址
-     * @param context   context
+     *
+     * @param url     下载地址
+     * @param context context
      */
-    public static void startDownLoad(String url, Context context){
+    public static void startDownLoad(String url, Context context) {
         UpdateService.Builder.create(url).build(context);
+    }
+
+    /**
+     * 获取应用版本号
+     *
+     * @param context
+     * @return
+     */
+    public static String getAppVersion(Context context) {
+        try {
+            PackageManager manager = context.getPackageManager();
+            PackageInfo pi = manager.getPackageInfo(context.getPackageName(), 0);
+            String version = pi.versionName;
+            return version;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return "获取版本号失败";
+        }
     }
 }
