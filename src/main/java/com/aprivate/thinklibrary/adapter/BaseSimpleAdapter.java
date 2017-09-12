@@ -10,16 +10,16 @@ import java.util.ArrayList;
 /**
  * Created by NewNet on 2017/7/11.
  */
-public abstract class BaseSimpleAdapter extends BaseAdapter {
+public abstract class BaseSimpleAdapter<T> extends BaseAdapter {
     protected Context mContext;
-    protected ArrayList<Object> data = new ArrayList<>();
+    protected ArrayList<T> data = new ArrayList<>();
 
     @Override
     public int getCount() {
         return data.size();
     }
 
-    public void addAll(ArrayList<Object> list) {
+    public void addAll(ArrayList<T> list) {
         data.addAll(list);
         notifyDataSetChanged();
     }
@@ -29,18 +29,18 @@ public abstract class BaseSimpleAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
-    public void addItem(Object obj) {
+    public void addItem(T obj) {
         data.add(obj);
         notifyDataSetChanged();
     }
 
-    public void updateItem(int pos, Object object) {
+    public void updateItem(int pos, T object) {
         data.set(pos, object);
         notifyDataSetChanged();
     }
 
     @Override
-    public Object getItem(int position) {
+    public T getItem(int position) {
         return data.get(position);
     }
 
