@@ -13,7 +13,7 @@ allprojects {<br>
 }<br>
 
 dependencies {<br>
-	compile 'com.github.snotJam:thinkLib:v1.0.3'<br>
+	compile 'com.github.snotJam:thinkLib:v1.0.5'<br>
 }
 
 
@@ -126,3 +126,7 @@ NormalPopupTools
 ------------------
   简单popupWindow创建<br>
   PopupWindow createNormalPopup(view,width,height)：内容和宽高。默认点击边界外关闭，可以获取焦点<br>
+
+gson
+---------------
+  在使用retrofit进行gson转换的时候用到<br>
