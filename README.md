@@ -34,7 +34,7 @@ dependencies {<br>
 
 BaseSimpleAdapter基础类
 -----------
-  使用：创建Adapter继承BaseSimpleAdapter，需要创建构造函数。(mContext = context)
+  使用：创建Adapter继承BaseSimpleAdapter<Class>，需要创建构造函数。(mContext = context)，泛型是接收的数据类型
 
 DrawableUtil
 -----------
