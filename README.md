@@ -138,5 +138,11 @@ ThinkRetrofitUtil
   getApi(String baseUrl, Class<T> service):接收url，指定api.class作为参数直接返回api对象<br>
   createRetrofitWithInterceptor(String baseUrl, Interceptor interceptor)：接收url，拦截器创建一个带有拦截器的retrofit<br>
 
-
+Acache
+-----------------
+  一个简单的缓存工具，使用可以参考https://github.com/yangfuhai/ASimpleCache<br>
+  
+GsonUtil
+-----------------
+  一个gson转换工具，用来实现object和json字符串之间的转换
 
