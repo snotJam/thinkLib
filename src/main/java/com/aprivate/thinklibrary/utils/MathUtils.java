@@ -1,7 +1,7 @@
 package com.aprivate.thinklibrary.utils;
 
 /**
- * Created by NewNet on 2016/4/13.
+ * Created by sss on 2016/4/13.
  */
 public class MathUtils {
 

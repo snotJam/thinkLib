@@ -33,4 +33,58 @@ public class TimeUtils {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         return simpleDateFormat.format(new Date(time * 1000L));
     }
+
+    /**
+     * 将时分秒转换为毫秒
+     *
+     * @return
+     */
+    public static long HMS2Ms(String time) {
+        long res = 0;
+        int one = time.indexOf(":");
+        int two = time.lastIndexOf(":");
+        String h = time.substring(0, one);
+        String m = time.substring(one, two).replace(":", "");
+        String s = time.substring(two, time.length()).replace(":", "");
+        res = Integer.valueOf(h) * 3600 + Integer.valueOf(m) * 60 + Integer.valueOf(s);
+        return res * 1000;
+    }
+
+    /**
+     * 将时分秒转换为分秒
+     *
+     * @param time
+     * @return
+     */
+    public static String HMS2MinS(String time) {
+        String res = "";
+        int one = time.indexOf(":");
+        int two = time.lastIndexOf(":");
+        String h = time.substring(0, one);
+        String m = time.substring(one, two).replace(":", "");
+        String s = time.substring(two, time.length()).replace(":", "");
+        int mis = Integer.valueOf(h) * 60 + Integer.valueOf(m);
+        String showMis = "";
+        if (mis < 10) {
+            showMis = "0" + mis;
+        } else {
+            showMis = mis + "";
+        }
+        res = showMis + ":" + s;
+        return res;
+    }
+
+    /**
+     * 将分秒转换为毫秒
+     *
+     * @return
+     */
+    public static long MS2Ms(String time) {
+        long res = 0;
+        int one = time.indexOf(":");
+        String m = time.substring(0, one);
+        String s = time.substring(one, time.length()).replace(":", "");
+        res = Integer.valueOf(m) * 60 + Integer.valueOf(s);
+        return res * 1000;
+    }
 }

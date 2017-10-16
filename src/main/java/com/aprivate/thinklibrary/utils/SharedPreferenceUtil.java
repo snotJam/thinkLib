@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * 提供一般操作
- * Created by NewNet on 2016/3/25.
+ * 提供SharePreference一般操作
+ * Created by sss on 2016/3/25.
  */
 public class SharedPreferenceUtil {
     Context mContext;

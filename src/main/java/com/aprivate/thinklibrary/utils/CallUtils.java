@@ -12,6 +12,7 @@ import android.support.v4.app.ActivityCompat;
 import android.widget.Toast;
 
 /**
+ * 拨打电话
  * 只能在activity中调用，参数为activity
  * Created by NewNet on 2016/7/29.
  */
