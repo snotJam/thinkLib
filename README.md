@@ -13,7 +13,7 @@ allprojects {<br>
 }<br>
 
 dependencies {<br>
-	compile 'com.github.snotJam:thinkLib:v1.0.6'<br>
+	compile 'com.github.snotJam:thinkLib:v1.0.7'<br>
 }
 
 
