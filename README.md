@@ -13,7 +13,7 @@ allprojects {<br>
 }<br>
 
 dependencies {<br>
-	compile 'com.github.snotJam:thinkLib:v1.0.6'<br>
+	compile 'com.github.snotJam:thinkLib:v1.0.8'<br>
 }
 
 
@@ -127,6 +127,16 @@ NormalPopupTools
   简单popupWindow创建<br>
   PopupWindow createNormalPopup(view,width,height)：内容和宽高。默认点击边界外关闭，可以获取焦点<br>
 
-gson
+gson目录
 ---------------
   在使用retrofit进行gson转换的时候用到<br>
+
+ThinkRetrofitUtil
+------------------
+  可以用这个工具创建Retrofit<br>
+  createRetrofit(String baseUrl)：接收url作为参数创建retrofit<br>
+  getApi(String baseUrl, Class<T> service):接收url，指定api.class作为参数直接返回api对象<br>
+  createRetrofitWithInterceptor(String baseUrl, Interceptor interceptor)：接收url，拦截器创建一个带有拦截器的retrofit<br>
+
+
+
