@@ -13,7 +13,7 @@ allprojects {<br>
 }<br>
 
 dependencies {<br>
-	compile 'com.github.snotJam:thinkLib:v1.0.8'<br>
+	compile 'com.github.snotJam:thinkLib:v1.0.9'<br>
 }
 
 
@@ -55,7 +55,7 @@ BasePullActivity/Fragment
 -----------
   包含下拉上滑的显示组件<br>
   包含BGARefreshLayout的下拉上滑页面，使用的时候要继承BasePullActivity/Fragment，然后在layout中要有BGARefreshLayout，（在gradle中导入：
-  compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'），然后记得调用initRefreshLayout来进行初始化。会提示重写两个方法：一个刷新，一个加载更多<br>
+  compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'和compile 'com.android.support:recyclerview-v7:24.2.1'），然后记得调用initRefreshLayout来进行初始化。会提示重写两个方法：一个刷新，一个加载更多<br>
   注意要在项目中添加recyclerView依赖，否则会报错<br>
 
 DisplayUtil
@@ -138,5 +138,11 @@ ThinkRetrofitUtil
   getApi(String baseUrl, Class<T> service):接收url，指定api.class作为参数直接返回api对象<br>
   createRetrofitWithInterceptor(String baseUrl, Interceptor interceptor)：接收url，拦截器创建一个带有拦截器的retrofit<br>
 
-
+Acache
+-----------------
+  一个简单的缓存工具，使用可以参考https://github.com/yangfuhai/ASimpleCache<br>
+  
+GsonUtil
+-----------------
+  一个gson转换工具，用来实现object和json字符串之间的转换
 
