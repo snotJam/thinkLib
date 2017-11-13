@@ -7,4 +7,5 @@
     <color name="black">#000</color>
     <color name="red">#FFE21929</color>
     <color name="blue">#66ccff</color>
+    <color name="transparent">#00000000</color>
 </resources>
