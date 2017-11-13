@@ -13,7 +13,7 @@ allprojects {<br>
 }<br>
 
 dependencies {<br>
-	compile 'com.github.snotJam:thinkLib:v1.0.9'<br>
+	compile 'com.github.snotJam:thinkLib:v1.1.0'<br>
 }
 
 
@@ -144,5 +144,12 @@ Acache
   
 GsonUtil
 -----------------
-  一个gson转换工具，用来实现object和json字符串之间的转换
+  一个gson转换工具，用来实现object和json字符串之间的转换<br>
+
+GlideRoundTransform
+----------------
+Glide圆角转换，使用方式为：
+Glide.with(context).load(path)
+                .transform(new CenterCrop(context), new GlideRoundTransform(context, 6))
+                .into(imageView);
 
