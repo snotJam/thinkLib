@@ -38,6 +38,9 @@ dependencies {
     compile 'com.android.support:percent:24.0.0'
     compile 'com.github.yaming116:UpdateApp:1.0.3'
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'io.reactivex:rxandroid:1.1.0'
 }
 
 //打包添加
