@@ -153,3 +153,6 @@ Glide.with(context).load(path)
                 .transform(new CenterCrop(context), new GlideRoundTransform(context, 6))
                 .into(imageView);
 
+SimpleProgressView
+-----------------
+简单的progressBar，在网络请求等待的时候显示
