@@ -137,6 +137,8 @@ ThinkRetrofitUtil
   createRetrofit(String baseUrl)：接收url作为参数创建retrofit<br>
   getApi(String baseUrl, Class<T> service):接收url，指定api.class作为参数直接返回api对象<br>
   createRetrofitWithInterceptor(String baseUrl, Interceptor interceptor)：接收url，拦截器创建一个带有拦截器的retrofit<br>
+  createRetrofitWithRxAdapter(String baseUrl):创建一个可以配合RxJava使用的retrofit<br>
+  getRxApi(String baseUrl, Class<T> service)：接收url，指定api.class作为参数直接返回api对象<br>
 
 Acache
 -----------------
@@ -153,3 +155,6 @@ Glide.with(context).load(path)
                 .transform(new CenterCrop(context), new GlideRoundTransform(context, 6))
                 .into(imageView);
 
+SimpleProgressView
+-----------------
+简单的progressBar，在网络请求等待的时候显示
