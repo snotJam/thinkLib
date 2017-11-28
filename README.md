@@ -61,6 +61,7 @@ BasePullActivity/Fragment
 DisplayUtil
 -----------
   尺寸转换，如px转dp,sp,和sp,dp转px等<br>
+  获取状态栏和导航栏高度<br>
 
 SharedPreferenceUtil
 -----------
