@@ -61,4 +61,27 @@ public class DisplayUtil {
         Typeface typeface = Typeface.createFromAsset(context.getAssets(), "fonts/SourceHanSansCN-Light.TTF");
         return typeface;
     }
+
+    /**
+     * 获取状态栏高度
+     *
+     * @param context
+     * @return
+     */
+    public static int getStatusBarHeight(Context context) {
+        if (context.getResources().getIdentifier("status_bar_height", "dimen", "android") > 0) {
+            return context.getResources().getDimensionPixelSize(context.getResources().getIdentifier("status_bar_height", "dimen", "android"));
+        } else {
+            return 0;
+        }
+    }
+
+    /**
+     * 获取导航栏高度
+     * @param context
+     * @return
+     */
+    public static int getNavigationBarHeight(Context context) {
+        return context.getResources().getDimensionPixelSize(context.getResources().getIdentifier("navigation_bar_height", "dimen", "android"));
+    }
 }
