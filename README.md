@@ -159,3 +159,10 @@ Glide.with(context).load(path)
 SimpleProgressView
 -----------------
 简单的progressBar，在网络请求等待的时候显示
+
+
+
+关于屏幕适配
+-----------------------
+直接参考大神的使用
+https://github.com/hongyangAndroid/AndroidAutoLayout
