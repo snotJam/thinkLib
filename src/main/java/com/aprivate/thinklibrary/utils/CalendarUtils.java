@@ -110,5 +110,25 @@ public class CalendarUtils {
         return cl;
     }
 
+    /**
+     * 获取上一月
+     *
+     * @return
+     */
+    public static Calendar getBeforeMonth(Calendar cl) {
+        cl.add(Calendar.MONTH, -1);
+        return cl;
+    }
+
+    /**
+     * 获取下一个月
+     *
+     * @param cl
+     * @return
+     */
+    public static Calendar getAfterMonth(Calendar cl) {
+        cl.add(Calendar.MONTH, 1);
+        return cl;
+    }
 
 }
