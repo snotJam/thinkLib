@@ -166,3 +166,20 @@ SimpleProgressView
 -----------------------
 直接参考大神的使用
 https://github.com/hongyangAndroid/AndroidAutoLayout
+
+
+CalendarUtils
+--------------------------
+日历，可以获取当前天的年月日<br>
+可以获取上一天，下一天，上一月，下一月
+
+
+RxTransformUtil
+-----------------------------
+简单指定调度线程<br>
+配合Retrofit和RxJava使用<br>
+使用的时候：<br>
+	Subscription sub = xxxapi.xxx().compose(RxtransformUtil.composeHelper()).subscribe(......)
+	
+
+	
